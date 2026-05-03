@@ -1,0 +1,46 @@
+Assignment 1: Basic Network Topologies Using Switches and Hubs
+Course: ENCS304 Computer Networks
+
+==============================
+TASK 1: STAR TOPOLOGY (SWITCH)
+==============================
+Ping Results from PC0:
+- Ping 192.168.10.2 : Successful (0% loss)
+- Ping 192.168.10.3 : Successful (0% loss)
+- Ping 192.168.10.4 : Successful (0% loss)
+
+Observation:
+Switch forwards frames only to destination MAC address.
+Efficient communication with no unnecessary broadcast.
+
+==============================
+TASK 2: HUB TOPOLOGY
+==============================
+Multiple ICMP packets sent simultaneously.
+Simulation showed hub forwarding packets to all ports.
+
+Observation:
+Hub broadcasts frames to every connected device.
+Higher traffic and possible collisions.
+Less efficient than switch.
+
+==============================
+TASK 3: RING-LIKE TOPOLOGY (3 SWITCHES)
+==============================
+Ping across switches successful.
+STP activity observed in simulation.
+
+Observation:
+Packets traveled across multiple switches.
+Redundant path available.
+
+==============================
+TASK 4: FAILURE TEST
+==============================
+One link disconnected.
+Communication continued via alternate path.
+
+Conclusion:
+Switch topology is efficient.
+Hub topology increases broadcast traffic.
+Ring topology improves fault tolerance.
